@@ -1,0 +1,118 @@
+@charset "BIG5";
+
+body {
+	padding-top: 160px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 75%;
+	line-height: 1;
+	background-color: #FFF8D7;
+}
+
+h1 {
+	font-size: 22px;
+	color: #5a6f66;
+}
+
+p {
+	color: #595959;
+	line-height: 25px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 10px 10px;
+}
+
+hr {
+	height: 2px;
+	border: none;
+	border-bottom: 2px dotted #000;
+}
+
+li {
+	font-size: 13px;
+	color: #595959;
+	line-height: 25px;
+	list-style-type: none;
+}
+
+.table_show {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	border-spacing: 2px;
+}
+
+.tr_show {
+	border: 1px solid #D8D8D8;
+	border-collapse: collapse;
+	padding: 10px 5px;
+}
+
+.td_show {
+	border: 1px solid #D8D8D8;
+	padding: 10px 5px;
+	white-space: nowrap;
+}
+
+.Center_DIV
+{
+	text-align: center;
+}
+
+    .Center_DIV a {
+        color: #5A5AAD;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding:5px 10px;
+    }
+
+        .Center_DIV a:hover {
+            text-decoration: underline;
+        }
+
+.Scrrenline_DIV {
+	float: left;
+	width: 28%;
+}
+
+.Result_DIV {
+	float: right;
+	width: 70%;
+}
+
+.Cancel_condition {
+	position: absolute;
+	left: 26%;
+	color: red;
+}
+
+.Little_btn {
+	padding: 0;
+	font-size: 8px;
+	border-radius: 6px;
+}
+
+.Home_body
+{
+	margin: 0;
+  display: grid; /*使用grid排版*/
+  grid-template-rows: 1fr auto; /*將上半部設置為一個單位，剩下的部分設為自動高度*/	
+}
+
+footer {
+  grid-row-start: 2;/*欄位從第二條橫線開始*/
+  grid-row-end: 3;/*欄位從第三條橫線結束*/
+}
+
+.Analyis_Menu
+{
+	padding:15%;
+  width: 100%;
+  text-align:center;
+}
