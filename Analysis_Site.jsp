@@ -17,6 +17,7 @@
 <script>
 	var data = new Array();
 </script>
+
 <%
 String driverName = "com.mysql.jdbc.Driver";
 String DB_URL = "jdbc:mysql://localhost:3306/phivalue?serverTimezone=UTC";
@@ -57,8 +58,7 @@ try {
 			test["To"] =  "<%=acid[j]%>";
 			test["From_no"] =  "<%=i%>";
 			test["To_no"] = "<%=j%>";
-			test["count"] = "<%=result.getString("num")%>
-	";
+			test["count"] = "<%=result.getString("num")%>";
 	data.push(test);
 </script>
 <%
@@ -74,6 +74,8 @@ out.println("Driver loading failed! <br/>");
 out.println("DB linking failed! <br/>");
 }
 %>
+
+
 <script>
 	function Load_scottor() {
 		var svg = d3.select("#scottor").append("svg").attr("width", 1000).attr(

@@ -216,7 +216,7 @@ function Cancel_Protein()
 <body onload="Load_Bar()">
 	<div>
 		<form id="protein_inform" name="protein_inform"
-			action="Analysis_phivalue.jsp" method="POST">
+			action="Analysis_Phi.jsp" method="POST">
 			<input type='hidden' name='Protein_name' id='Protein_name' value="">
 		</form>
 		<form action="Result.jsp" id="search_protein" name="search_protein" method="POST">
