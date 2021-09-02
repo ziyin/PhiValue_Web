@@ -377,7 +377,7 @@ $(function() {
 		autoOpen : false,
 		resizable : false,
 		draggable : false,
-		minHeight : 600,
+		minHeight : 400,
 		minWidth : 	document.body.clientWidth*0.28,
 		open : function(event, ui) {
 			$(this).parent().css({
@@ -855,7 +855,7 @@ function load_condition()
 		</div>
 			<div class="Result_DIV" id="Result_Table">
 		<div id="Div_Structure" style="display: none" title="Structure">
-			<iFrame src="" width="430" height="600" id="JMOL_Show"></iFrame>
+			<iFrame src="" width="430" height="400" id="JMOL_Show"></iFrame>
 		</div>
 		<%
 		connDB = null;

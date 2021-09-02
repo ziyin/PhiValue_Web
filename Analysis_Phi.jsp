@@ -256,7 +256,7 @@ function Cancel_Protein()
 			connDB = DriverManager.getConnection(DB_URL, Account, Password);
 			Statement cmd = connDB.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			ResultSet result = null;
-			result = cmd.executeQuery("SELECT DISTINCT mutant1.protein_name FROM mutant1");
+			result = cmd.executeQuery("SELECT DISTINCT mutant1.protein_name FROM mutant1 Order by mutant1.protein_name");
 			while (result.next()) {
 				String PName = result.getString("protein_name");
 		%>
@@ -274,7 +274,7 @@ function Cancel_Protein()
 		%>
 		</div>
 	</div>
-	<div class="class="Result_DIV">
+	<div class="Result_DIV">
 	<%
 	if(protein_name!="")
 		out.println("<a herf='#' onclick='Cancel_Protein()'>(X)¡i" + protein_name + "¡j</a>¡@");
